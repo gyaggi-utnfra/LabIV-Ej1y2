@@ -1,0 +1,21 @@
+<h1>Calculadora de promedios</h1>
+  <div>
+      <label for="edadUno">Ingrese edad 1:</label>
+      <input type="text" [(ngModel)]="edades[0]" name="edadUno" id="edadUno">
+  </div>
+  <div>
+    <label for="edadDos">Ingrese edad 2:</label>
+    <input type="text" [(ngModel)]="edades[1]" name="edadDos" id="edadDos">
+  </div>
+  <div>
+    <input type="button" (click)="mostrarPromedio()" value="Calcular">
+    <input type="button" (click)="resetear()" value="Limpiar">
+  </div>
+  <div>
+    <label for="promedio">Promedio:</label>
+    <input type="text" [(ngModel)]="promedio" name="promedio" id="promedio" readonly>
+  </div>
+
+
+
+  <router-outlet></router-outlet>
